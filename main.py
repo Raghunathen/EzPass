@@ -1,16 +1,14 @@
 
 
-
-# 1. give no of characters
-# 2. give sentences, digits, symbols
-# 3. generate
-
+# menuu
+# 1. min caps, lows, symbols // menu
+# 2. store in local csv
 
 import random, string
 
 no = 10
-word = "abcde"
-alter = True
+word = "asd"
+alter = False
 altered = ""
 
 alterdict = { "a" : "@", "O" : "0", "o" : "0", "E" : "3", "e" : "3" }
@@ -21,12 +19,16 @@ if alter:
             altered += alterdict[i]
         else:
             altered += i
+    key = ""
+    key = altered
+else:
+    key = ""
+    key = word
 
 a = list(string.printable)
+a.remove(" ")
 
-key = ""
 
-key = altered
 
 
 
@@ -35,3 +37,4 @@ while len(key) < no:
 
 
 print(key)
+print(len(key))
