@@ -7,7 +7,7 @@
 import random, string, csv
 
 no = 12
-word = "sakthish"
+word = "asd"
 alter = True
 altered = ""
 
